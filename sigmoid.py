@@ -4,6 +4,7 @@ Created on Sat Jun  6 23:37:20 2020
 
 @author: Eftychia Tsoni
 """
+import numpy as np
 
 def sigmoid(z):
     """
