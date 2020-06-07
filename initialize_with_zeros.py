@@ -8,7 +8,7 @@ Created on Sat Jun  6 23:46:59 2020
 import numpy as np
 
 def initialize_with_zeros(dim):
-    
+
     """
     Creates a vector of zeros of shape (dim, 1) for w
     and initialize b to 0.

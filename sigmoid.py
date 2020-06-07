@@ -7,6 +7,7 @@ Created on Sat Jun  6 23:37:20 2020
 import numpy as np
 
 def sigmoid(z):
+    
     """
     Compute the sigmoid activation of linear z    
 

@@ -11,8 +11,8 @@ from sigmoid import sigmoid
 def propagate(w, b, X, Y):
     
     """
+    Implement the cost function and its gradient for the propagation explained above
     
-
     Parameters
     ----------
     w : weights, a numpy array of size (num_px * num_px * 3, 1)
@@ -23,7 +23,6 @@ def propagate(w, b, X, Y):
         
     Y : true "label" vector (containing 0 if non-cat, 1 if cat) of size (1, number of examples)
         
-
     Returns
     -------
     cost : negative log-likelihood cost for logistic regression
@@ -45,9 +44,9 @@ def propagate(w, b, X, Y):
     cost = -(1/m)*np.sum((Y*np.log(A)) + (1-Y)*np.log(1-A))
     
     # BACKWARD PROPAGATION (TO FIND GRAD)
-    
-    dw = (1/m)*np.dot(X,(A-Y).T)
-    db = (1/m)*np.sum(A-Y)
+    dz = A - Y
+    dw = (1/m)*np.dot(X, dz.T)
+    db = (1/m)*np.sum(dz)
     
     grads = {"dw": dw, 
              "db": db}
