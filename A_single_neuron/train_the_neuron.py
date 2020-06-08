@@ -11,8 +11,7 @@ import matplotlib.pyplot as plt
 from load_dataset import load_dataset
 from model import model
 
-index_train = 23
-index_test = 49
+index_train = 150
 
 # Loading the original data (cat / non-cat)
 train_set_x_orig, train_set_y, test_set_x_orig, test_set_y, classes = load_dataset()
